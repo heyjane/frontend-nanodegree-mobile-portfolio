@@ -1,0 +1,10 @@
+Resources for Project 4:
+
+Intro to Gulp: http://www.sitepoint.com/introduction-gulp-js/
+
+http://yeoman.io/blog/performance-optimization.html
+https://www.npmjs.com/package/gulp-svgmin
+https://github.com/sindresorhus/gulp-webp
+http://www.sitepoint.com/complete-guide-reducing-page-weight/
+
+
