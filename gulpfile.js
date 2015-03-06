@@ -84,7 +84,12 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('./build/css/'));
 });
 
-
+//Push to gh-pages
+var ghPages = require('gulp-gh-pages');
+	gulp.task('deploy', function() {
+		return gulp.src('./build/**/*')
+		.pipe(ghPages());
+	});
 
 //default gulp task
 gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles', 'webp'], function() {
