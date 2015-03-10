@@ -10,3 +10,14 @@ http://yeoman.io/learning/deployment.html
 http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/
 http://www.base64-image.net/
 
+http://jsperf.com/queryselectorall-vs-getelementbyid/52
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment
+http://xahlee.info/js/js_get_elements.html
+https://www.codefellows.org/blog/quick-intro-to-gulp-js
+https://www.youtube.com/watch?v=BaneWEqNcpE (Wait, Chrome Dev Tools could do THAT?)
+https://www.youtube.com/watch?v=n8ep4leoN9A (Google I/O 2013 - Jank Free: Chrome Rendering Performance)
+http://blog.alexmaccaw.com/css-transitions
+
+
+
+
