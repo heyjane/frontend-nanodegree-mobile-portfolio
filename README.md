@@ -22,9 +22,8 @@ In addition to the resources suggested by Udacity for this project, I used the r
 Most of the performance problems in this part of the project were related to inefficient for loops that accessed the DOM unnecessarily.  I also resized and optimized images.  I replaced bootstrap-grid.css with bootstrap.min.css, and used Gulp to optimize the js and html files.  I also used translate3d transformations to render the sliding pizza movements as suggested by the research I conducted on optimization.
 
 You can view the source files for this part of the project under src/views/src and the optimized production files under /src/views/build.  The gulpfile for this part of the project is /src/views/gulpfile.js.
-You can access the [pizza.html file](https://github.com/heyjane/frontend-nanodegree-mobile-portfolio/blob/master/src/views/build/pizza.html) for testing at
-https://github.com/heyjane/frontend-nanodegree-mobile-portfolio/blob/master/src/views/build/pizza.html
-(or clicking on src/views/build/pizza.html in this Github repository).
+You can access the [pizza.html site on GitHub pages](http://heyjane.github.io/frontend-nanodegree-mobile-portfolio/src/views/build/pizza.html) for testing at http://heyjane.github.io/frontend-nanodegree-mobile-portfolio/src/views/build/pizza.html
+or by clicking on src/views/build/pizza.html in this Github repository: https://github.com/heyjane/frontend-nanodegree-mobile-portfolio/blob/master/src/views/build/pizza.html.
 
 RESULTS: Target score for fps is 60 fps or higher.  After optimizations, Google DevTool timeline results were consistently higher than 60fps.
 
