@@ -18,6 +18,13 @@ https://www.youtube.com/watch?v=BaneWEqNcpE (Wait, Chrome Dev Tools could do THA
 https://www.youtube.com/watch?v=n8ep4leoN9A (Google I/O 2013 - Jank Free: Chrome Rendering Performance)
 http://blog.alexmaccaw.com/css-transitions
 
+office hours
+Git
+coffee chats
+google groups
+piazza
+uChat
+
 
 
 

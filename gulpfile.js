@@ -1,14 +1,22 @@
-//include gulp
+//include gulp plug-ins
 var gulp = require('gulp');
-
-//include plug-ins
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var jshint = require('gulp-jshint');
+var minifyHTML = require('gulp-minify-html');
+var uglify = require('gulp-uglify');
+var autoprefix = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-minify-css');
 
 //JShint task
 gulp.task('jshint', function() {
-	gulp.src('./js/*.js')
+	gulp.src('./src/js/*.js')
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'));
+});
+
+gulp.task('viewjshint', function() {
+	gulp.src('./src/views/js/*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
@@ -26,8 +34,15 @@ gulp.src(imgSrc)
 });
 
 
-//include plug-ins
-var minifyHTML = require('gulp-minify-html');
+gulp.task('viewimagemin', function() {
+	var imgSrc = './src/views/img/**/*',
+		imgDst = './build/views/img';
+
+gulp.src(imgSrc)
+	.pipe(changed(imgDst))
+	.pipe(imagemin())
+	.pipe(gulp.dest(imgDst));
+});
 
 // minify new or changed HTML pages
 gulp.task('htmlpage', function() {
@@ -41,28 +56,37 @@ gulp.src(htmlSrc)
 
 });
 
-//include plug-ins
-var concat = require('gulp-concat');
-var stripDebug = require('gulp-strip-debug');
-var uglify = require('gulp-uglify');
+gulp.task('viewhtmlpage', function() {
+	var htmlSrc = './src/views/*.html',
+	    htmlDst = './build/views';
 
-//JS concat, strip debugging and minify
-gulp.task('scripts', function() {
-	gulp.src(['./src/js/lib.js', './src/js/*.js'])
-		.pipe(concat('script.js'))
-		.pipe(stripDebug())
-		.pipe(uglify())
-		.pipe(gulp.dest('./build/js/'));
+gulp.src(htmlSrc)
+	.pipe(changed(htmlDst))
+	.pipe(minifyHTML())
+	.pipe(gulp.dest(htmlDst));
+
 });
 
-//Push to gh-pages
-var ghPages = require('gulp-gh-pages');
-	gulp.task('deploy', function() {
-		return gulp.src('./build/**/*')
-		.pipe(ghPages());
-	});
+//JS minify
+gulp.task('scripts', function() {
+	var jsSrc = './src/js/*.js',
+		jsDst = './build/js/';
+
+	gulp.src(jsSrc)
+		.pipe(uglify())
+		.pipe(gulp.dest(jsDst));
+});
+
+gulp.task('viewscripts', function() {
+	var jsSrc = './src/views/js/*.js',
+		jsDst = './build/views/js/';
+
+	gulp.src(jsSrc)
+		.pipe(uglify())
+		.pipe(gulp.dest(jsDst));
+});
 
 //default gulp task
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts'], function() {
+gulp.task('default', ['imagemin', 'viewimagemin', 'htmlpage', 'viewhtmlpage', 'scripts', 'viewscripts', ], function() {
 
 });
