@@ -1,7 +1,10 @@
 Resources for Project 4:
 
-Intro to Gulp: http://www.sitepoint.com/introduction-gulp-js/
+I completed the suggested course for this project as a first step.  I also attended office hours, scheduled a 1 on 1 instructor chat, and attended a group coffee chat.  I also used Piazza, uChat, and online and printed resources to research related tools, practices, and skills for this project.  I also used GitHub and Google groups to share ideas with other students and brainstorm solutions.
 
+Here are some of the additional resources that were helpful to me:
+
+Intro to Gulp: http://www.sitepoint.com/introduction-gulp-js/
 http://yeoman.io/blog/performance-optimization.html
 https://www.npmjs.com/package/gulp-svgmin
 https://github.com/sindresorhus/gulp-webp
@@ -9,7 +12,6 @@ http://www.sitepoint.com/complete-guide-reducing-page-weight/
 http://yeoman.io/learning/deployment.html
 http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/
 http://www.base64-image.net/
-
 http://jsperf.com/queryselectorall-vs-getelementbyid/52
 https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment
 http://xahlee.info/js/js_get_elements.html
@@ -18,12 +20,8 @@ https://www.youtube.com/watch?v=BaneWEqNcpE (Wait, Chrome Dev Tools could do THA
 https://www.youtube.com/watch?v=n8ep4leoN9A (Google I/O 2013 - Jank Free: Chrome Rendering Performance)
 http://blog.alexmaccaw.com/css-transitions
 
-office hours
-Git
-coffee chats
-google groups
-piazza
-uChat
+Thank you for taking the time to review my project and share your suggestions
+for improvement with me.  I learned a lot!
 
 
 
